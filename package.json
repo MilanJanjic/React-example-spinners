@@ -4,17 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MilanJanjic/React-example-spinners.git"
   },
-  "keywords": ["react", "spinners", "css"],
+  "keywords": [
+    "react",
+    "spinners",
+    "css"
+  ],
   "author": "Milan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MilanJanjic/React-example-spinners/issues"
   },
-  "homepage": "https://github.com/MilanJanjic/React-example-spinners#readme"
+  "homepage": "https://github.com/MilanJanjic/React-example-spinners#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^6.4.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
+  }
 }
